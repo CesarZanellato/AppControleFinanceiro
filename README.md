@@ -8,15 +8,15 @@ Este projeto de estudo visa criar um aplicativo simples e funcional e aprimorar 
 Principais Destaques:
 
 Estrutura de um projeto .NET MAUI.
-Fluxo de execução do projeto.
-Criação de telas (Páginas).
-Navegação entre telas.
-Utilização de componentes visuais como: Texto, Botões, Imagens, Border, etc.
-Criação de formulários para o cadastro e atualização.
-Uso do componente CollectionView.
-Uso do padrão Pub/Sub (WeakReferenceMessenger)
-Uso de Conversores.
-Padrão Repository.
-Uso de Injeção de Dependência.
-Uso de Estilos Visuais.
+<br>Fluxo de execução do projeto.
+<br>Criação de telas (Páginas).
+<br>Navegação entre telas.
+<br>Utilização de componentes visuais como: Texto, Botões, Imagens, Border, etc.
+<br>Criação de formulários para o cadastro e atualização.
+<br>Uso do componente CollectionView.
+<br>Uso do padrão Pub/Sub (WeakReferenceMessenger)
+<br>Uso de Conversores.
+<br>Padrão Repository.
+<br>Uso de Injeção de Dependência.
+<br>Uso de Estilos Visuais.
 
