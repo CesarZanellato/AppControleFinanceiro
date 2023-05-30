@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppControleFinanceiro.Views.TransactionAdd"
+             Title="TransactionAdd">
+    <VerticalStackLayout Spacing="10">
+        <Border 
+            Padding="15" 
+            Background="Gray" 
+            Stroke="Transparent" 
+            Margin="15"  
+            StrokeShape="RoundRectangle 30">
+            
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*, 30">
+                <Label 
+                    Text="Novo"
+                    TextColor="White"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center"
+                />
+
+                <Image
+                    HorizontalOptions="Center"                    
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Source="close.png"
+                    WidthRequest="17">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerTapped_ToClose"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </Grid>
+        </Border>
+
+        <Label 
+            x:Name="LabelError" 
+            Margin="30,0" 
+            TextColor="Red" 
+            IsVisible="False"/>
+
+        <Grid ColumnDefinitions="*,*" Margin="30,0">
+            
+        <RadioButton 
+            x:Name="RadioIncome" 
+            IsChecked="True" 
+            Content="Receita" TextColor="Black"/>
+            
+        <RadioButton 
+            x:Name="RadioExpense" 
+            HorizontalOptions="End" 
+            Grid.Column="1" 
+            Content="Despesa" TextColor="Black"/>
+            
+        </Grid>
+
+        <Entry 
+            x:Name="EntryName" 
+            Placeholder="Nome" 
+            Margin="15,0" 
+            TextColor="Black"/>
+
+        <DatePicker 
+            x:Name="DatePickerDate" 
+            Margin="15,0" 
+            TextColor="Black"/>
+
+        <Entry 
+            x:Name="EntryValue" 
+            Placeholder="Valor" 
+            Margin="15,0"
+            TextColor="Black"/>
+
+        <Button 
+            Clicked="Buttom_Clicked_Save" 
+            Margin="15,0" 
+            HorizontalOptions="Center" 
+            Text="Salvar"/>
+
+    </VerticalStackLayout>
+</ContentPage>
